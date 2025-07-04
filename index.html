@@ -30,6 +30,19 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Active nav link styling */
+        .navbar-nav .nav-link.active {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,7 +60,7 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
+                <a href="#home" class="navbar-brand">
                     <h1 class="text-white">Uliza<span class="text-dark">.</span>AI</h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
@@ -56,21 +69,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#projects" class="nav-item nav-link">Projects</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sections</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="faq.html" class="dropdown-item">FAQs</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="#why-choose-us" class="dropdown-item">Why Choose Us</a>
+                                <a href="#team" class="dropdown-item">Our Team</a>
+                                <a href="#faqs" class="dropdown-item">FAQs</a>
+                                <a href="#testimonials" class="dropdown-item">Testimonials</a>
+                                <a href="#contact" class="dropdown-item">Talk to Us</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
@@ -82,15 +95,15 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+    <div id="home" class="container-fluid pt-5 bg-primary hero-header mb-5">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                     <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Uliza.AI</div>
                     <h1 class="display-4 text-white mb-4 animated slideInRight">Intelligent Automation for Modern Businesses</h1>
                     <p class="text-white mb-4 animated slideInRight">We build custom AI agents that automate workflows, enhance decision-making, and transform business operations. From Nairobi to the world, we deliver cutting-edge AI solutions tailored to your needs.</p>
-                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Our Services</a>
-                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Get Started</a>
+                    <a href="#services" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Our Services</a>
+                    <a href="#contact" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Get Started</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="img/hero-img.png" alt="AI Automation Illustration">
@@ -123,7 +136,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div id="about" class="container-fluid py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -147,7 +160,7 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center mt-4">
-                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Learn More</a>
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="#services">Learn More</a>
                         <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
@@ -161,14 +174,14 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid bg-light mt-5 py-5">
+    <div id="services" class="container-fluid bg-light mt-5 py-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
                     <h1 class="mb-4">AI Solutions That Drive Business Growth</h1>
                     <p class="mb-4">We design AI agents that integrate seamlessly with your existing systems to automate processes, enhance decision-making, and create new opportunities. Our solutions are scalable, secure, and tailored to your specific industry requirements.</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">All Services</a>
+                    <a class="btn btn-primary rounded-pill px-4" href="#contact">Get Started</a>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
@@ -181,7 +194,7 @@
                                         </div>
                                         <h5 class="mb-3">Process Automation</h5>
                                         <p>AI agents that handle repetitive tasks, from data entry to complex workflow automation, reducing errors and operational costs.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <a class="btn px-3 mt-auto mx-auto" href="#contact">Get Quote</a>
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
@@ -191,7 +204,7 @@
                                         </div>
                                         <h5 class="mb-3">Predictive Analytics</h5>
                                         <p>Machine learning models that analyze patterns and predict future outcomes, helping you make data-driven decisions.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <a class="btn px-3 mt-auto mx-auto" href="#contact">Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +218,7 @@
                                         </div>
                                         <h5 class="mb-3">AI Consultation</h5>
                                         <p>Strategic guidance on implementing AI solutions that align with your business objectives and technology stack.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <a class="btn px-3 mt-auto mx-auto" href="#contact">Get Quote</a>
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
@@ -215,7 +228,7 @@
                                         </div>
                                         <h5 class="mb-3">Natural Language Processing</h5>
                                         <p>Chatbots and virtual assistants that understand and respond to customer inquiries with human-like precision.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <a class="btn px-3 mt-auto mx-auto" href="#contact">Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +242,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-primary feature pt-5">
+    <div id="why-choose-us" class="container-fluid bg-primary feature pt-5">
         <div class="container pt-5">
             <div class="row g-5">
                 <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
@@ -259,7 +272,7 @@
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-users fa-3x text-white"></i>
                                 <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">50+</h2>
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">5</h2>
                                     <p class="text-white mb-0">Satisfied Clients</p>
                                 </div>
                             </div>
@@ -268,7 +281,7 @@
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-check fa-3x text-white"></i>
                                 <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">120+</h2>
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">8</h2>
                                     <p class="text-white mb-0">Successful Projects</p>
                                 </div>
                             </div>
@@ -285,7 +298,7 @@
 
 
     <!-- Projects Start -->
-    <div class="container-fluid bg-light py-5">
+    <div id="projects" class="container-fluid bg-light py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Projects</div>
@@ -295,7 +308,7 @@
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/project-1.jpg" alt="Retail Automation">
-                        <a class="case-overlay text-decoration-none" href="">
+                        <a class="case-overlay text-decoration-none" href="#">
                             <small>Retail Sector</small>
                             <h5 class="lh-base text-white mb-3">Inventory management AI for regional supermarket chain</h5>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
@@ -305,7 +318,7 @@
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/project-2.jpg" alt="Financial AI">
-                        <a class="case-overlay text-decoration-none" href="">
+                        <a class="case-overlay text-decoration-none" href="#">
                             <small>Financial Services</small>
                             <h5 class="lh-base text-white mb-3">Fraud detection system for digital banking platform</h5>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
@@ -315,7 +328,7 @@
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/project-3.jpg" alt="Healthcare AI">
-                        <a class="case-overlay text-decoration-none" href="">
+                        <a class="case-overlay text-decoration-none" href="#">
                             <small>Healthcare</small>
                             <h5 class="lh-base text-white mb-3">Patient triage chatbot for hospital network</h5>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
@@ -329,7 +342,7 @@
 
 
     <!-- FAQs Start -->
-    <div class="container-fluid py-5">
+    <div id="faqs" class="container-fluid py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
@@ -463,14 +476,14 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
+    <div id="team" class="container-fluid bg-light py-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
                     <h1 class="mb-4">Meet Our AI Experts</h1>
                     <p class="mb-4">Our team combines deep technical expertise with business acumen to deliver practical AI solutions. With backgrounds in machine learning, data science, and enterprise software, we bridge the gap between cutting-edge research and real-world applications.</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">View Full Team</a>
+                    <a class="btn btn-primary rounded-pill px-4" href="#contact">Contact Us</a>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
@@ -479,7 +492,7 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
                                         <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="Team Member">
-                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <h5 class="mb-0">Trevor Wanjala</h5>
                                         <small>Founder & CEO</small>
                                         <div class="d-flex justify-content-center mt-3">
                                             <a class="btn btn-square btn-primary m-1" href=""><i
@@ -496,46 +509,8 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
                                         <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="Team Member">
-                                        <h5 class="mb-0">Adam Crew</h5>
+                                        <h5 class="mb-0">Philemon Terence</h5>
                                         <small>Executive Manager</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-md-4">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="Team Member">
-                                        <h5 class="mb-0">Kate Winslet</h5>
-                                        <small>Co Founder</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="Team Member">
-                                        <h5 class="mb-0">Cody Gardner</h5>
-                                        <small>Project Manager</small>
                                         <div class="d-flex justify-content-center mt-3">
                                             <a class="btn btn-square btn-primary m-1" href=""><i
                                                     class="fab fa-facebook-f"></i></a>
@@ -559,14 +534,14 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <div id="testimonials" class="container-xxl py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
                     <h1 class="mb-4">What Our Clients Say</h1>
                     <p class="mb-4">Don't just take our word for it. Here's what businesses like yours are saying about the impact of our AI solutions on their operations and bottom line.</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">View All Testimonials</a>
+                    <a class="btn btn-primary rounded-pill px-4" href="#contact">Share Your Experience</a>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel border-start border-primary">
@@ -640,11 +615,11 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div id="contact" class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
+                    <a href="#home" class="d-inline-block mb-3">
                         <h1 class="text-white">Uliza<span class="text-primary">.</span>AI</h1>
                     </a>
                     <p class="mb-0">We build intelligent automation solutions that transform businesses. Our AI agents handle complex tasks, analyze data, and make decisions - allowing your team to focus on strategic growth.</p>
@@ -664,19 +639,19 @@
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#contact">Contact Us</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Conditions</a>
                     <a class="btn btn-link" href="">Careers</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Process Automation</a>
-                    <a class="btn btn-link" href="">Predictive Analytics</a>
-                    <a class="btn btn-link" href="">AI Consultation</a>
-                    <a class="btn btn-link" href="">Natural Language Processing</a>
-                    <a class="btn btn-link" href="">Custom AI Development</a>
+                    <a class="btn btn-link" href="#services">Process Automation</a>
+                    <a class="btn btn-link" href="#services">Predictive Analytics</a>
+                    <a class="btn btn-link" href="#services">AI Consultation</a>
+                    <a class="btn btn-link" href="#services">Natural Language Processing</a>
+                    <a class="btn btn-link" href="#services">Custom AI Development</a>
                 </div>
             </div>
         </div>
@@ -688,10 +663,10 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
+                            <a href="#home">Home</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
-                            <a href="">FAQs</a>
+                            <a href="#faqs">FAQs</a>
                         </div>
                     </div>
                 </div>
@@ -716,6 +691,50 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
 
+    <script>
+        // Back to top button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.back-to-top').fadeIn('slow');
+            } else {
+                $('.back-to-top').fadeOut('slow');
+            }
+        });
+        
+        $('.back-to-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+            return false;
+        });
+
+        // Smooth scrolling for navigation links
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top - 70,
+                },
+                500,
+                'linear'
+            );
+            
+            // Update active nav link
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // Update active nav link on scroll
+        $(window).scroll(function() {
+            var scrollDistance = $(window).scrollTop() + 100;
+            
+            $('section').each(function(i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('.nav-link.active').removeClass('active');
+                    $('.nav-link').eq(i).addClass('active');
+                }
+            });
+        }).scroll();
+    </script>
+</body>
 </html>
